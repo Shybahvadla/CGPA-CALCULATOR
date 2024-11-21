@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <form id="cgpaForm">
+            <div id="marksContainer" class="marks-container">
+                <div class="input-group">
+                    <label for="marks1">Subject 1 Marks:</label>
+                    <input type="number" id="marks1" name="marks[]" required>
+                    <button type="button" class="delete-subject-btn">&times;</button>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="button" id="addSubject">Add Subject</button>
+                <button type="submit">Calculate CGPA</button>
+            </div>
+        </form>
+        <div id="result" class="result hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

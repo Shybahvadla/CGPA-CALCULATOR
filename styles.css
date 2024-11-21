@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #6c63ff, #ffa500);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+h1 {
+    font-size: 2.5rem; /* Increase the font size */
+    font-family: 'Poppins', sans-serif; /* Use a modern and elegant font */
+    background: linear-gradient(90deg, #6c63ff, #ffa500); /* Gradient text color */
+    color: transparent; /* Make text transparent for gradient effect */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Ensure compatibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the heading */
+    text-transform: uppercase; /* Make the text uppercase for emphasis */
+    letter-spacing: 2px; /* Add spacing between letters */
+}
+
+
+.container {
+    background: #ffffff;
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+.marks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    border: 2px solid #6c63ff;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    text-align: left;
+}
+
+/* Input Styling */
+input {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Delete Button */
+.delete-subject-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-subject-btn:hover {
+    background-color: #ff5252;
+    transform: scale(1.1);
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#addSubject {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+#addSubject:hover {
+    background-color: #5548d1;
+    transform: scale(1.05);
+}
+
+[type="submit"] {
+    background-color: #ffa500;
+    color: #fff;
+}
+
+[type="submit"]:hover {
+    background-color: #e69500;
+    transform: scale(1.05);
+}
+
+/* Result Styling */
+.result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
